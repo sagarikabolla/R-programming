@@ -1,0 +1,135 @@
+plot(1:10,col="red")
+________________________________________
+plot(1:10,cex=2)
+_______________________________________________
+plot(1:10,pch=25,cex=2)
+______________________________________
+plot(1:10,type='l',col="blue")
+__________________________________________
+plot(1:10,type="l",lwd=2)
+_________________________________________
+plot(1:10,type="l",lwd=5,lty=3)
+_________________________________________
+x=1:10
+y1=x
+y2=x^2
+y3=sqrt(x)
+plot(x,y1,type="l",col="blue",ylim=range(0,y2,y3),xlab="x_axis",ylab="y_axis")
+lines(x,y2,type="l",col="red")
+lines(x,y3,type="l",col="green")
+legend("topright",legend=c("line1","line2","line3"),col=c("blue","red","green"),lty=1)
+title("Multiple lines plot")
+__________________________________________________________
+#creating Bar plot
+#sample data
+categories <- c("A","B","C","D")
+values <- c(20,30,15,25)
+#create a simple bar plot
+barplot(values,names.arg=categories,main="bar plot")
+______________________________________________________
+x <- c(1,2,3,4,5)
+y <- c(2,3,1,5,4)
+#create a simple line plot
+plot(x,y,type="l",main="lineplot",xlab="x_axis",ylab="y_axis")
+________________________________________________________
+rnorm(3)
+______________________________________________
+x <- 23
+y <- 56
+if(x>y){
+  print("x is greater then y")
+}else{
+  print("x is not greater than y")
+}
+_______________________________________
+x <- 90
+y <- 89
+if(x==y){
+  print("x is equal to y")
+}else{
+    print("x is not equal to y")
+  }
+_________________________________________
+x <- 23
+y <- 56
+if(x>y){
+  print("x is greater then y")
+}else if(x<y)
+{
+    print("x is not greater than y")
+  }
+ 
+
+_______________________________________________________
+a <- 200
+b <- 300
+if(b>a){
+  print("b is greater than a")
+}else if(a==b){
+  print("a  and b are equal")
+}else{
+  print("a is greater than b")
+}
+_______________________________________________
+#for loop
+ for(i in 1:5)
+{
+  print("hi")
+}
+_______________________________________________
+x <- 10
+for(i in 1:10)
+{
+  print("sagarika")
+}
+____________________________________________
+x <- 10
+ for(i in 1:10 )
+{
+      if(i>=-1 & i<=1)
+         {
+           x <- x+1
+       print(x)
+  }
+ }
+________________________________
+x <- c(33,44,55,66,88)
+x 
+is.double(x)
+_____________________________________
+x <- c(33L,44L,55L)
+x
+is.integer(x)
+___________________________________
+x <- c("sagarika","mani kumar")
+print(x)
+is.character(x)
+____________________________
+seq(1,34,6)
+_________________________________
+rep(3,38)
+_____________________________________
+v1 <- c("sagarika","pandu","sravya","panda")
+v1[1]
+v1[4]
+v1[3]
+___________________________________________
+rep(2,4)
+rep(4,each=3)
+______________________________________________
+x <- c(33,34,86)
+rep(x,each=7)
+______________________________________________
+matrix()
+x <- 1:20
+x
+mat1 <- matrix(data=x,nrow=4,ncol=5)
+mat1[1,1]
+mat1[1,5]
+
+
+
+
+
+
+
